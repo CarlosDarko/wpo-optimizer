@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-   "build": "npm run build:css && vite build",
-    "build:css": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css",
+    "build": "npm run build:css && vite build",
+    "build:css": "./node_modules/.bin/tailwindcss -i ./src/index.css -o ./dist/tailwind.css",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "tailwind-init": "node_modules/.bin/tailwindcss.cmd init -p"
